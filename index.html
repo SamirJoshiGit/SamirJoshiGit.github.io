@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <title>Samir Joshi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
 <style>
-@keyframes myChange {
-  from {
-      height: 100px;
-  } to {
-      height: 0;
-  }
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
 }
 
-div {
-  height: 100px;
-  background-color: lightblue;
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+/* GLOBAL STYLES */
+body {
+  background: #333;
 }
 
-div.ng-hide {
-  animation: 0.5s myChange;
+h1{
+    color: white;
 }
+
+
 </style>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
-
-<body ng-app="ngAnimate">
-
-In progress website: <input type="checkbox" ng-model="myCheck">
-
-<div ng-hide="myCheck">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Activities</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+    <h1>Samir Joshi</h1>
 </div>
-
 
 </body>
 </html>
